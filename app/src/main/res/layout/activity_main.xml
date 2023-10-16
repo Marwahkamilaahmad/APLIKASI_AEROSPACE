@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR PATHFINDING"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        />
+
+        <Spinner
+            android:id="@+id/spinner_rintangan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:backgroundTintMode="screen"
+            android:backgroundTint="@color/chocoPastel1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S "
+            android:layout_marginEnd="10dp"/>
+
+    <EditText
+
+        android:hint="x1"
+        android:id="@+id/text_sx"
+        android:textSize="12sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:paddingHorizontal="40dp"
+        android:background="@drawable/custom_input"
+        android:backgroundTint="@color/chocoPastel1"
+        />
+
+    <EditText
+        android:hint="y1"
+        android:id="@+id/text_sy"
+        android:textSize="12sp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:paddingHorizontal="40dp"
+        android:backgroundTint="@color/chocoPastel1"
+        android:background="@drawable/custom_input"/>
+
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+
+                android:hint="x6"
+                android:textSize="12sp"
+                android:id="@+id/text_Fx"
+                android:backgroundTint="@color/chocoPastel2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:paddingHorizontal="40dp"
+                android:background="@drawable/custom_input"/>
+
+            <EditText
+                android:hint="y6"
+                android:id="@+id/text_Fy"
+                android:textSize="12sp"
+                android:layout_width="100dp"
+                android:backgroundTint="@color/chocoPastel2"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="40dp"
+                android:background="@drawable/custom_input"/>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layoutA1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1"
+            android:id="@+id/labelA1"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+
+            android:hint="x2"
+            android:id="@+id/text_A1x"
+            android:textSize="12sp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/chocoPastel1"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/custom_input"
+             />
+
+        <EditText
+            android:hint="y2"
+            android:id="@+id/text_A1y"
+            android:textSize="12sp"
+            android:layout_width="100dp"
+            android:backgroundTint="@color/chocoPastel1"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layoutB1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B1"
+            android:id="@+id/labelB1"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+
+            android:hint="x3"
+            android:textSize="12sp"
+            android:id="@+id/text_B1x"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/chocoPastel2"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/custom_input"/>
+
+        <EditText
+            android:hint="y3"
+            android:id="@+id/text_B1y"
+            android:textSize="12sp"
+            android:layout_width="100dp"
+            android:backgroundTint="@color/chocoPastel2"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:paddingHorizontal="40dp"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:id="@+id/layoutA2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A2"
+            android:id="@+id/labelA2"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+
+            android:hint="x4"
+            android:textSize="12sp"
+            android:id="@+id/text_A2x"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:paddingHorizontal="40dp"
+            android:backgroundTint="@color/chocoPastel1"
+            android:background="@drawable/custom_input"/>
+
+        <EditText
+            android:hint="y4"
+            android:id="@+id/text_A2y"
+            android:textSize="12sp"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:paddingHorizontal="40dp"
+            android:backgroundTint="@color/chocoPastel1"
+            android:background="@drawable/custom_input"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:id="@+id/layoutB2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/labelB2"
+                android:text="B2"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+
+                android:hint="x5"
+                android:textSize="12sp"
+                android:id="@+id/text_B2x"
+                android:backgroundTint="@color/chocoPastel2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:paddingHorizontal="40dp"
+                android:background="@drawable/custom_input"/>
+
+            <EditText
+                android:hint="y5"
+                android:id="@+id/text_B2y"
+                android:backgroundTint="@color/chocoPastel2"
+                android:textSize="12sp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:paddingHorizontal="40dp"
+                android:background="@drawable/custom_input"/>
+
+
+        </LinearLayout>
+
+
+<!--        <EditText-->
+<!--            android:hint="rintangan"-->
+<!--            android:id="@+id/text_rintangan"-->
+<!--            android:textSize="12sp"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:backgroundTint="@color/chocoPastel1"-->
+<!--            android:paddingHorizontal="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:background="@drawable/custom_input"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      hasil jarak minimum :"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/hasil_text1"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textSize="25sp"
+        android:id="@+id/hasil_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_calculate"
+        android:text="Calculate"
+        android:fontFamily="@font/poppins"
+        android:backgroundTint="@color/coklat1"
+
+        />
+
+
+    </LinearLayout>
+
+</ScrollView>

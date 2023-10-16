@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Mission</string>
+
+        <string-array name="pilihanRintangan">
+            <item>pilih rintangan</item>
+            <item>1</item>
+            <item>2</item>
+        </string-array>
+</resources>

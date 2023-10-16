@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelemetryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="50dp"
+        android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Telemetry"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/text_idTeam"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        android:hint="enter id team"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/text_quantity"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="10dp"
+        android:hint="enter quantity"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="apply"
+        android:fontFamily="@font/poppins"
+        android:backgroundTint="@color/chocoPastel2"
+        android:textColor="@color/coklat1"
+        android:id="@+id/btn_apply"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode0"
+        android:layout_gravity="center"
+        android:hint="enter data"
+        android:fontFamily="@font/poppins"
+        android:text="00403,12:32:17,7,110,500,12;"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode1"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:text="00403,12:33:21,8,109,490,12;"
+        android:paddingHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode2"
+        android:layout_gravity="center"
+        android:text="00404,12:33:49,7,109,490,12;"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode3"
+        android:text="00403,12:34:23,6,110,480,12;00"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode4"
+        android:layout_gravity="center"
+        android:hint="enter data"
+        android:paddingHorizontal="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:text="00403, ,7,110,480,12;"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="00403,12:35:32,7,111,480,12,15;"
+        android:id="@+id/textCode5"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:paddingHorizontal="20dp"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode6"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:fontFamily="@font/poppins"
+        android:paddingHorizontal="20dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/textCode7"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:hint="enter data"
+        android:paddingHorizontal="20dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hasil"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/text_hasil"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:id="@+id/textHasil0"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/textHasil1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/textHasil2"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/textHasil3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:id="@+id/textHasil4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:id="@+id/textHasil5"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:id="@+id/textHasil6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/merah1"
+            android:id="@+id/textHasil7"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:text="reset"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/coklat1"
+            android:backgroundTint="@color/chocoPastel1"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/btn_reset"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/coklat1"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:backgroundTint="@color/chocoPastel1"
+            android:layout_marginStart="10dp"
+            android:text="lihat hasil"
+            android:id="@+id/btn_hasil"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
